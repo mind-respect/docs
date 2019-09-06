@@ -2,10 +2,10 @@
     <v-layout class="vh-center">
         <v-flex md8 xs12>
             <v-card flat class="pt-8" color="transparent">
-                <v-card-title v-if="title">
+                <v-card-title v-if="title" class="font-weight-bold">
                     {{title}}
                 </v-card-title>
-                <v-card-text class="pt-2 pb-2 mb-5">
+                <v-card-text class="pt-2 pb-2 mb-5 black--text">
                     <slot></slot>
                 </v-card-text>
             </v-card>

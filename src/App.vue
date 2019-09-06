@@ -41,7 +41,7 @@
                             v-else
                             :key="i"
                             value="true"
-                            @click="goTo(item.path)"
+                            @click="goTo(item)"
                             :class="{
                               'side-menu-active': item.path === $route.path && (!item.isActive || item.isActive()),
                               'pl-8': item.level === 1
@@ -128,13 +128,35 @@
             switchLanguage: function (locale) {
                 this.$store.dispatch('setLocale', locale)
             },
-            goTo: function (path) {
-                if (this.$route.path === path) {
+            goTo: function (item) {
+                if (this.$route.path === item.path) {
                     return;
                 }
                 this.$router.push({
-                    path: path
-                })
+                    path: item.path
+                });
+                this.reviewTitle();
+            },
+            reviewTitle: function () {
+                let items = this.menuItems.filter((item) => {
+                    return item.title && item.path === this.$route.path && (!item.isActive || item.isActive());
+                });
+                if (items.length > 0) {
+                    document.title = this.$t('nav:' + items[0].title);
+                }
+            }
+        },
+        mounted: function () {
+            this.reviewTitle();
+        },
+        computed: {
+            currentPath: function () {
+                return this.$route.path;
+            }
+        },
+        watch: {
+            currentPath: function () {
+                this.reviewTitle();
             }
         }
     }
@@ -157,6 +179,6 @@
     }
 
     * {
-      font-family: 'Raleway', sans-serif;
+        font-family: 'Raleway', sans-serif;
     }
 </style>

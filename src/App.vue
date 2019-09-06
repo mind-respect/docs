@@ -2,11 +2,11 @@
     <v-app>
         <v-app-bar
                 color="transparent"
-                class="black--text vh-center elevation-1"
+                class="black--text elevation-1"
                 fixed
                 app
         >
-            <v-toolbar-title class="vh-center">
+            <v-toolbar-title>
                 {{$t('nav:title')}}
             </v-toolbar-title>
             <v-spacer></v-spacer>

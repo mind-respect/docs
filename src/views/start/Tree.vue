@@ -1,6 +1,6 @@
 <template>
     <panel :title="$t('tree:title')">
-        <p class="body-1">
+        <p>
           {{$t('tree:content')}}
         </p>
     </panel>

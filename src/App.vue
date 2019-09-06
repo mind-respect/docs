@@ -157,6 +157,6 @@
     }
 
     * {
-      font-family: 'Quattrocento', serif;
+      font-family: 'Raleway', sans-serif;
     }
 </style>

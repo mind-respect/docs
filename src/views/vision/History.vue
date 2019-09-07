@@ -1,10 +1,10 @@
 <template>
-    <panel :title="$t('tree:title')">
+    <panel :title="$t('history:title')">
         <p>
-          {{$t('tree:content')}}
+          {{$t('history:content')}}
         </p>
         <p>
-          {{$t('tree:content2')}}
+          {{$t('history:content2')}}
         </p>
     </panel>
 </template>
@@ -14,13 +14,13 @@
 
     export default {
         data: function () {
-            i18n.i18next.addResources('fr', 'tree', {
-                title: 'Arborescence',
+            i18n.i18next.addResources('fr', 'history', {
+                title: 'Histoire',
                 content: "Lorem ipsum",
                 content2: "Appuyer sur tab va ajouter une nouvelle bulle"
             });
-            i18n.i18next.addResources('en', 'tree', {
-                title: 'Tree 101',
+            i18n.i18next.addResources('en', 'history', {
+                title: 'History',
                 content: "Lorem ipsum",
                 content2: "Pressing tab will add a new bubble"
             });

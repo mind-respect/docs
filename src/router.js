@@ -16,6 +16,11 @@ export default new Router({
             path: '/start/arborescence',
             name: 'tree',
             component: () => import('./views/start/Tree.vue')
+        },
+        {
+            path: '/vision/history',
+            name: 'history',
+            component: () => import('./views/vision/History.vue')
         }
     ]
 })

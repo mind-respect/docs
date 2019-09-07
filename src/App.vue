@@ -76,6 +76,7 @@
                 welcome: 'Bienvenue',
                 newUser: 'Nouvel utilisateur',
                 tree101: 'Arborescence 101',
+                history: 'Histoire',
                 title: 'Documentation de mindrespect.com',
                 logout: 'Déconnexion',
                 requestError: 'Il y a un problème de connexion avec notre serveur. Essayez de nouveau plus tard.',
@@ -88,6 +89,7 @@
                 welcome: 'Welcome',
                 newUser: 'New user',
                 tree101: 'Tree 101',
+                history: 'History',
                 title: 'mindrespect.com documentation',
                 logout: 'Logout',
                 requestError: 'There\'s a connection problem with our server. Try again later.',
@@ -118,6 +120,10 @@
                         level: 1
                     },
                     {header: 'vision'},
+                    {
+                        title: 'history',
+                        path: '/vision/history'
+                    }
                 ],
                 miniVariant: false,
                 right: true

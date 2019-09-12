@@ -75,8 +75,23 @@
                 gettingStarted: 'Pour commencer',
                 welcome: 'Bienvenue',
                 newUser: 'Nouvel utilisateur',
+                newDeveloper: "Nouvelle recrue au développement",
+                developer: "Installation de l'environnement de travail",
                 tree101: 'Arborescence 101',
+                functionalities: 'Fonctionnalités',
+                tags: 'Étiquettes',
+                search: 'Recherche',
+                share: 'Options de partage',
+                mobile: 'Version mobile',
                 history: 'Histoire',
+                values: 'Valeurs',
+                philosophy: 'Philosophie',
+                founder: 'Fondateur',
+                manifesto: 'Manifeste',
+                tech: 'Choix technologiques',
+                businessPlan: "Plan d'action stratégique",
+                compare:  'Comparaison',
+                target: 'Public cible',
                 title: 'Documentation de mindrespect.com',
                 logout: 'Déconnexion',
                 requestError: 'Il y a un problème de connexion avec notre serveur. Essayez de nouveau plus tard.',
@@ -88,8 +103,23 @@
                 gettingStarted: 'Getting started',
                 welcome: 'Welcome',
                 newUser: 'New user',
+                newDeveloper: 'New Developer',
+                developer: 'Install your Workspace',
                 tree101: 'Tree 101',
+                functionalities: 'Functionalities',
+                tags: 'Tags',
+                search: 'Search',
+                share: 'Share',
+                mobile: 'Mobile Version',
                 history: 'History',
+                values: 'Values',
+                philosophy: 'Philosophy',
+                founder: 'Founder',
+                manifesto: 'Manifesto',
+                tech: 'Tekky',
+                businessPlan: 'Business Plan',
+                compare: 'Comparison',
+                target: 'Target Market!',
                 title: 'mindrespect.com documentation',
                 logout: 'Logout',
                 requestError: 'There\'s a connection problem with our server. Try again later.',
@@ -119,10 +149,88 @@
                         path: '/start/arborescence',
                         level: 1
                     },
+                    {
+                        title: 'newDeveloper',
+                        path: '/start/developer',
+                        isActive: () => {
+                            return false;
+                        }
+                    },{
+                        title: 'developer',
+                        path: '/start/developer',
+                        level: 1
+                    },
                     {header: 'vision'},
+                    {
+                        title: 'Mission',
+                        path: '/vision/mission'
+                    },
+                    {
+                        title: 'values',
+                        path: '/vision/values'
+                    },
+                    {
+                        title: 'philosophy',
+                        path: '/vision/philosophy'
+                    },
+                    {
+                        title: 'founder',
+                        path: '/vision/founder'
+                    },
                     {
                         title: 'history',
                         path: '/vision/history'
+                    },
+                    {
+                        title: 'manifesto',
+                        path: '/vision/manifesto'
+                    },
+                    {header: 'functionalities'},
+                    {
+                        title: 'tags',
+                        path: '/functionalities/tags'
+                    },
+                    {
+                        title: 'Fusion',
+                        path: '/functionalities/fusion'
+                    },
+                    {
+                        title: 'search',
+                        path: '/functionalities/search'
+                    },
+                    {
+                        title: 'share',
+                        path: '/functionalities/share'
+                    },
+                    {
+                        title: 'mobile',
+                        path: '/functionalities/mobile'
+                    },
+                    {header: 'tech'},
+                    {
+                        title: 'Github',
+                        path: '/functionalities/github'
+                    },
+                    {
+                        title: 'Neo4J',
+                        path: '/functionalities/neo4j'
+                    },
+                    {
+                        title: 'Vue.JS',
+                        path: '/functionalities/vuejs'
+                    },
+                    {header: 'businessPlan'},
+                    {
+                        title: 'compare',
+                        path: '/businessPlan/compare'
+                    },
+                    {
+                        title: 'Finance',
+                        path: '/businessPlan/finance'
+                    },
+                    {
+                        title: 'target',
+                        path: '/businessPlan/target'
                     }
                 ],
                 miniVariant: false,

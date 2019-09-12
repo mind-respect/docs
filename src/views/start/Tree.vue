@@ -1,5 +1,6 @@
 <template>
     <panel :title="$t('tree:title')">
+        <img src="" alt="">
         <p>
           {{$t('tree:content')}}
         </p>
